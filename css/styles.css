@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  background-color: #000; }
+
+a {
+  color: #eee; }
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(300px, 1.5fr) minmax(300px, 1fr); }
+  @media only screen and (max-width: 800px) {
+    #main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: auto; } }
+
+#photo {
+  background: #000 url(../images/p01.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.8; }
+  @media only screen and (max-width: 800px) {
+    #photo {
+      margin: 10px 0;
+      min-height: 200px;
+      min-width: 200px;
+      background-size: contain; } }
+
+#info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #info h1,
+  #info h2 {
+    font-family: "Special Elite", cursive;
+    font-size: 3rem; }
+  #info h1 {
+    margin-top: 0;
+    white-space: nowrap; }
+  #info h2 {
+    line-height: 1.5; }
+    #info h2 span {
+      display: inline-block; }
+  #info p {
+    font-family: "Nunito", sans-serif; }
+  #info p,
+  #info h2 {
+    font-size: 1rem; }
+  @media only screen and (max-width: 800px) {
+    #info {
+      align-items: center;
+      padding-top: 0; } }
+
+#soc-med {
+  margin-top: 20px; }
+  #soc-med a {
+    margin-right: 10px; }
+    #soc-med a:last-of-type {
+      margin-right: 0; }
+
+/*# sourceMappingURL=styles.css.map */
